@@ -5,13 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>大島祐一</title>
   <style>
-    /* 画像は最初非表示に設定 */
     #surpriseImage {
       display: none;
-      width: 300px; /* 画像サイズ調整 */
+      width: 300px;
       height: auto;
     }
-    /* ボタンのデザイン */
     button {
       padding: 10px 20px;
       font-size: 16px;
@@ -28,16 +26,14 @@
 </head>
 <body>
 
-  <h1>ビックリ箱のように画像が出てくるページ</h1>
+  <h1>大島祐一</h1>
 
-  <!-- ボタン -->
-  <button onclick="showImage()">できました！</button>
+  <button onclick="showImage()">終わりました！</button>
 
-  <!-- 画像 -->
-  <img id="surpriseImage" src="https://via.placeholder.com/300x200.png?text=ビックリ!" alt="Surprise Image">
+  <!-- 画像のファイル名はimage.png -->
+  <img id="surpriseImage" src="a.png" alt="Surprise Image">
 
   <script>
-    // 画像を表示する関数
     function showImage() {
       var image = document.getElementById("surpriseImage");
       image.style.display = "block";  // 画像を表示
