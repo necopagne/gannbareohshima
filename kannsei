@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大島祐一</title>
+  <style>
+    /* 画像は最初非表示に設定 */
+    #surpriseImage {
+      display: none;
+      width: 300px; /* 画像サイズ調整 */
+      height: auto;
+    }
+    /* ボタンのデザイン */
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ビックリ箱のように画像が出てくるページ</h1>
+
+  <!-- ボタン -->
+  <button onclick="showImage()">できました！</button>
+
+  <!-- 画像 -->
+  <img id="surpriseImage" src="https://via.placeholder.com/300x200.png?text=ビックリ!" alt="Surprise Image">
+
+  <script>
+    // 画像を表示する関数
+    function showImage() {
+      var image = document.getElementById("surpriseImage");
+      image.style.display = "block";  // 画像を表示
+    }
+  </script>
+
+</body>
+</html>
