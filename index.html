@@ -9,6 +9,7 @@
       display: none;
       width: 300px;
       height: auto;
+      animation: springAnimation 1s ease-in-out forwards;
     }
     button {
       padding: 10px 20px;
@@ -21,6 +22,21 @@
     }
     button:hover {
       background-color: #45a049;
+    }
+
+    @keyframes springAnimation {
+      0% {
+        transform: scale(0.5); /* 初めは小さく */
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1.2); /* 少し大きくなります */
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1); /* 最後に元の大きさに戻る */
+        opacity: 1;
+      }
     }
   </style>
 </head>
