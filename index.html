@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>沢田 正規</title>
+  <title>お忙しいところすみません。</title>
   <style>
     #surpriseImage {
       display: none;
@@ -40,17 +40,18 @@
     }
   </style>
 </head>
-<body>
+<body style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0;">
 
   <h1>ボタンを押してください</h1>
 
-  <button onclick="showImage()">ぼたんだよ。</button>
+  <!-- ボタンを中央に配置 -->
+  <button onclick="showImage()" style="padding: 10px 20px; font-size: 16px; cursor: pointer; margin-bottom: 20px;">ぼたんだよ。</button>
 
-  <!-- メッセージを表示する場所 -->
-  <h2 id="birthdayMessage" style="display:none; color:red;">誕生日おめでとうございます！🎉</h2>
+  <!-- メッセージを中央に配置 -->
+  <h2 id="birthdayMessage" style="display:none; color:red; font-size: 24px;">誕生日おめでとうございます！🎉</h2>
 
-  <!-- 画像のファイル名はimage.png -->
-  <img id="surpriseImage" src="image.png" alt="Surprise Image" style="display:none;">
+  <!-- 画像を中央に配置 -->
+  <img id="surpriseImage" src="b.png" alt="Surprise Image" style="display:none; max-width: 300px; margin-top: 20px;">
 
   <script>
     function showImage() {
@@ -64,4 +65,5 @@
   </script>
 
 </body>
+
 </html>
