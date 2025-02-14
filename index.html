@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>大島祐一</title>
+  <title>沢田 正規</title>
   <style>
     #surpriseImage {
       display: none;
@@ -42,17 +42,24 @@
 </head>
 <body>
 
-  <h1>大島祐一</h1>
+  <h1>ボタンを押してください</h1>
 
-  <button onclick="showImage()">終わりました！</button>
+  <button onclick="showImage()">ぼたんだよ。</button>
+
+  <!-- メッセージを表示する場所 -->
+  <h2 id="birthdayMessage" style="display:none; color:red;">誕生日おめでとうございます！🎉</h2>
 
   <!-- 画像のファイル名はimage.png -->
-  <img id="surpriseImage" src="a.png" alt="Surprise Image">
+  <img id="surpriseImage" src="image.png" alt="Surprise Image" style="display:none;">
 
   <script>
     function showImage() {
       var image = document.getElementById("surpriseImage");
-      image.style.display = "block";  // 画像を表示
+      var message = document.getElementById("birthdayMessage");
+
+      // 画像とメッセージを表示
+      image.style.display = "block";
+      message.style.display = "block";
     }
   </script>
 
